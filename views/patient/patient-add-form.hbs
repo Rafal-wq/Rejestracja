@@ -1,0 +1,24 @@
+<h2>Dokonaj rejestracji pacjenta</h2>
+<p>Wprowadź dane a następnie zatwierdź formularz :</p>
+<form action="/patient" method="post">
+    <label>
+        Imię:<br>
+        <input type="text" name="name" minlength="3" maxlength="50"><br>
+    </label>
+    <br>
+    <label>
+        Nazwisko:<br>
+        <input type="text" name="surname" minlength="3" maxlength="60"><br>
+    </label>
+    <br>
+    <label>
+        PESEL:<br>
+        <input type="text" name="pesel" minlength="11" maxlength="12">
+    </label>
+
+    <br>
+    <br>
+    <button type="submit">Zatwierdź rejestrację</button>
+</form>
+<br>
+{{> go-to-homepage}}

@@ -1,0 +1,19 @@
+<h2>Lista pacjentów</h2>
+
+<ul>
+    {{#each patientsList}}
+        <ul>
+            <hr>
+            Dane pacjenta:
+            <br>
+            Imię : {{this.name}}
+            <br>
+            Nazwisko : {{this.surname}}
+            <br>
+            ID : {{this.id}}
+            <hr>
+        </ul>
+    {{/each}}
+</ul>
+
+{{> go-to-homepage}}

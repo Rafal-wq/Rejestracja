@@ -1,0 +1,19 @@
+<h2>Lista lekarzy</h2>
+
+<ul>
+    {{#each doctorsList}}
+        <ul>
+            <hr>
+            Dane lekarza o id: {{this.id}}:
+            <br>
+            Imię : {{this.name}}
+            <br>
+            Nazwisko : {{this.surname}}
+            <br>
+            Specjalizacja : {{this.specialization}}
+            <hr>
+        </ul>
+    {{/each}}
+</ul>
+
+{{> go-to-homepage}}

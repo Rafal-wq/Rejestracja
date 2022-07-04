@@ -1,0 +1,24 @@
+<h2>Dokonaj rejestracji lekarza</h2>
+<p>Wprowadź dane a następnie zatwierdź formularz :</p>
+<form action="/doctor" method="post">
+    <label>
+        Imię:<br>
+        <input type="text" name="name" minlength="3" maxlength="25"><br>
+    </label>
+    <br>
+    <label>
+        Nazwisko:<br>
+        <input type="text" name="surname" minlength="3" maxlength="60"><br>
+    </label>
+    <br>
+    <label>
+        Specjalizacja:<br>
+        <input type="text" name="specialization" minlength="3" maxlength="60">
+    </label>
+
+    <br>
+    <br>
+    <button type="submit">Zatwierdź rejestrację</button>
+</form>
+<br>
+{{> go-to-homepage}}
