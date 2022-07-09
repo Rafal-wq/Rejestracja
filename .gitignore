@@ -145,3 +145,7 @@ dist
 
 .idea
 
+config/config.js
+
+utils/db.js
+

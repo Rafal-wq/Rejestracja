@@ -1,0 +1,24 @@
+<h2>Umawianie wizyty u lekarza</h2>
+<p>Wprowadź dane a następnie zatwierdź formularz :</p>
+<form action="/visit" method="post">
+    <label>
+        Id pacjenta:<br>
+        <input type="text" name="patientId" minlength="3" maxlength="36"><br>
+    </label>
+    <br>
+    <label>
+        Id lekarza:<br>
+        <input type="text" name="doctorId" minlength="3" maxlength="36"><br>
+    </label>
+    <br>
+    <label>
+        Data umówionej wizyty:<br>
+        <input type="date" name="dataVisit" minlength="6" maxlength="20">
+    </label>
+
+    <br>
+    <br>
+    <button type="submit">Zatwierdź rejestrację</button>
+</form>
+<br>
+{{> go-to-homepage}}

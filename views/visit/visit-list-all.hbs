@@ -1,0 +1,19 @@
+<h2>Rejestr umówionych wizyt</h2>
+
+<ul>
+    {{#each visitsList}}
+        <ul>
+            <hr>
+            Lista wizyt:
+            <br>
+            Id pacjenta : {{this.patientId}}
+            <br>
+            Id lekarza : {{this.doctorId}}
+            <br>
+            Data wizyty : {{this.dataVisit}}
+            <hr>
+        </ul>
+    {{/each}}
+</ul>
+
+{{> go-to-homepage}}
